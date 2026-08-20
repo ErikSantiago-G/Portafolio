@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erik Santiago García — Backend Developer &amp; Data Enthusiast</title>
+  <meta name="description" content="Erik Santiago García González, estudiante de Ingeniería Informática en Medellín. Backend con NestJS y Prisma, análisis de datos con Python y SQL." />
+  <meta name="theme-color" content="#efede4" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Erik Santiago García — Backend Developer & Data Enthusiast" />
+  <meta property="og:description" content="Estudiante de Ingeniería Informática en Medellín, Colombia. Construyendo APIs y explorando datos." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tipografías: Fraunces (display), Space Grotesk (cuerpo), JetBrains Mono (datos/código) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Ruta plana: style.css vive en la misma carpeta que este index.html -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" data-reveal>
+    <a href="#top" class="logo" aria-label="Inicio">ESG<span class="logo-dot">.</span></a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <a class="btn-header" href="mailto:hello@eriksantiago.dev?subject=Hola%20Erik%2C%20quiero%20hablar%20contigo">
+      Escríbeme
+    </a>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section id="top" class="hero">
+      <div class="hero-photo-wrap" data-reveal>
+        <img src="FotoErik.png" alt="Foto de Erik Santiago García González" class="hero-photo" />
+      </div>
+
+      <p class="eyebrow mono" data-reveal>SELECT * FROM erik.dev <span class="cursor" aria-hidden="true">_</span></p>
+
+      <h1 class="hero-title" data-reveal>
+        Hola, mi<br/>
+        nombre es <strong>Erik</strong>.
+      </h1>
+
+      <p class="hero-sub" data-reveal>
+        Soy <strong>estudiante de Ingeniería Informática</strong> en Medellín, Colombia.
+      </p>
+
+      <button class="scroll-cue" data-scroll-target="#sobre-mi" aria-label="Bajar a la siguiente sección">
+        <span>Desplázate</span>
+        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" aria-hidden="true">
+          <path d="M7 1v17M1 12l6 6 6-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section id="sobre-mi" class="section about">
+      <h2 class="section-title" data-reveal>Datos y <em>código</em>,<br/>la misma lógica.</h2>
+
+      <div class="about-grid">
+        <p class="about-copy" data-reveal>
+          Estudio Ingeniería Informática y me muevo cómodo en dos mundos que muchos ven separados:
+          el <strong>análisis de datos</strong> y el <strong>desarrollo backend</strong>. Empecé por las bases
+          de datos relacionales y el análisis con Python, y desde ahí fui subiendo capas hasta construir
+          APIs completas. Trabajo con metodologías ágiles como Scrum, y me interesa seguir creciendo
+          hacia el desarrollo Full Stack, uniendo lógica de datos con buena experiencia de usuario.
+        </p>
+
+        <!-- Elemento firma: panel tipo "resultado de consulta" -->
+        <div class="query-panel" data-reveal>
+          <div class="query-panel-head">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="query-panel-title mono">stack.query</span>
+          </div>
+          <pre class="mono query-code"><code>SELECT skill, category
+FROM erik.stack
+ORDER BY category;</code></pre>
+          <table class="query-result mono" aria-label="Stack técnico de Erik">
+            <thead>
+              <tr><th>skill</th><th>category</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>PostgreSQL</td><td>data</td></tr>
+              <tr><td>Python</td><td>data</td></tr>
+              <tr><td>SQL</td><td>data</td></tr>
+              <tr><td>Node.js</td><td>backend</td></tr>
+              <tr><td>NestJS</td><td>backend</td></tr>
+              <tr><td>Prisma</td><td>backend</td></tr>
+              <tr><td>TypeScript</td><td>lenguaje</td></tr>
+              <tr><td>JavaScript</td><td>lenguaje</td></tr>
+              <tr><td>HTML / CSS</td><td>frontend</td></tr>
+            </tbody>
+          </table>
+          <p class="query-panel-foot mono">9 rows returned</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTO DESTACADO ============ -->
+    <section id="proyectos" class="section featured">
+      <span class="eyebrow mono" data-reveal>Proyecto destacado</span>
+      <h2 class="section-title" data-reveal>API Backend <em>E-Commerce</em>.</h2>
+
+      <div class="featured-grid" data-reveal>
+        <div class="featured-copy">
+          <p>
+            Un backend de e-commerce construido de punta a punta con <strong>NestJS</strong>,
+            <strong>TypeScript</strong>, <strong>PostgreSQL</strong> y <strong>Prisma</strong>, siguiendo
+            principios SOLID y arquitectura limpia. Incluye autenticación JWT con roles
+            (Admin / Manager / Customer), gestión de productos y categorías, carrito de compras,
+            un módulo CMS y pagos integrados con <strong>Stripe</strong>, con manejo de webhooks
+            y actualización automática de pedidos y stock.
+          </p>
+
+          <ul class="tag-list" aria-label="Tecnologías usadas">
+            <li>NestJS</li>
+            <li>TypeScript</li>
+            <li>PostgreSQL</li>
+            <li>Prisma</li>
+            <li>Stripe</li>
+            <li>JWT</li>
+            <li>Swagger</li>
+          </ul>
+
+          <a class="link-arrow" href="https://github.com/ErikSantiago-G/API-Proyecto-Final" target="_blank" rel="noopener">
+            Ver repositorio en GitHub <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="featured-visual" aria-hidden="true">
+          <div class="terminal">
+            <div class="query-panel-head">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="query-panel-title mono">POST /checkout/create</span>
+            </div>
+            <pre class="mono terminal-body"><code>→ auth: JWT verified (role: customer)
+→ cart: 3 items validated
+→ stripe: session created
+→ webhook: payment_intent.succeeded
+→ order: status = "paid"
+→ stock: decremented
+<span class="ok">200 OK · 184ms</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÁS PROYECTOS ============ -->
+    <section class="section more-projects">
+      <h2 class="section-title small" data-reveal>Otros proyectos.</h2>
+
+      <div class="project-grid" data-reveal>
+
+        <article class="project-card">
+          <p class="mono project-lang">Jupyter Notebook</p>
+          <h3>Análisis de dataset de empleos en IA</h3>
+          <p>Exploración y análisis de datos sobre el mercado laboral en Inteligencia Artificial usando Python.</p>
+          <a href="https://github.com/ErikSantiago-G/Analisis-AI-job-dataset" target="_blank" rel="noopener">
+            Ver repositorio <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <p class="mono project-lang">TypeScript</p>
+          <h3>FrontSaintEssence</h3>
+          <p>Frontend construido para consumir la API de e-commerce, conectando la lógica de negocio con la interfaz de usuario.</p>
+          <a href="https://github.com/ErikSantiago-G/FrontSaintEssence" target="_blank" rel="noopener">
+            Ver repositorio <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <p class="mono project-lang">JavaScript</p>
+          <h3>Parcial 1 — Desarrollo Web</h3>
+          <p>Proyecto académico de desarrollo web, primeros pasos aplicando lógica de programación en el navegador.</p>
+          <a href="https://github.com/ErikSantiago-G/Parcial1-DesarrolloWeb" target="_blank" rel="noopener">
+            Ver repositorio <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <p class="mono project-lang">TypeScript</p>
+          <h3>Parcial 2 — Desarrollo</h3>
+          <p>Segunda entrega del curso de desarrollo, subiendo la complejidad con tipado estático.</p>
+          <a href="https://github.com/ErikSantiago-G/Parcial2-Desarrollo-" target="_blank" rel="noopener">
+            Ver repositorio <span aria-hidden="true">→</span>
+          </a>
+        </article>
+
+      </div>
+
+      <a class="link-arrow" href="https://github.com/ErikSantiago-G?tab=repositories" target="_blank" rel="noopener" data-reveal>
+        Ver todos los repositorios <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER / CONTACTO ============ -->
+  <footer id="contacto" class="site-footer">
+    <h2 class="footer-title" data-reveal>¿Hablamos?</h2>
+    <p class="footer-sub" data-reveal>Abierto a prácticas, proyectos y colaboraciones.</p>
+
+    <a class="footer-email" href="mailto:Sg1861111@gmail.com" data-reveal>Sg1861111@gmail.com</a>
+
+    <nav class="social-links" aria-label="Redes sociales" data-reveal>
+      <a href="https://github.com/ErikSantiago-G" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/erik-santiago-garcia-gonzalez-04b29a3a0/" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+    <p class="footer-fine mono">Hecho en Medellín, Colombia · © 2026</p>
+  </footer>
+
+  <!-- Ruta plana: main.js vive en la misma carpeta que este index.html -->
+  <script src="main.js"></script>
+</body>
+</html>
